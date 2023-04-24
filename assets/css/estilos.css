@@ -249,8 +249,8 @@ justify-content: space-around;
   padding-top: 1rem;
   color: #f3f3f3;
   display:flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .ft-bastian{
