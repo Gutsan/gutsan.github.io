@@ -237,13 +237,22 @@ justify-content: space-around;
   gap: 10px;
 }
 
-footer{
+.footer-principal{
   color: #f3f3f3;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
+.footer-final{
+  background-color: #00000008;
+  padding-top: 1rem;
+  color: #f3f3f3;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ft-bastian{
 width: 30rem;
 padding:2rem;
@@ -252,6 +261,7 @@ padding:2rem;
   text-align: justify;
   font-style: italic;  
 }
+
 
 .ft-link{
   all: initial;
