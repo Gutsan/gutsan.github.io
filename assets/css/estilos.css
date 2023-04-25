@@ -77,7 +77,8 @@ height: 100%;
     margin-inline:1.5rem;
     border: 1.2rem solid #374258;
     box-sizing: border-box;
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    margin-bottom: 20px;
 }
 .text-progress{
   color:#f74464;
@@ -211,6 +212,8 @@ justify-content: space-around;
   border-top: solid 1px #f74464;
   height: 50px;
   line-height: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 .portf-card .back a{
  color: #f74464;
