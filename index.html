@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
   <title>Bastian Gutierrez Sanchez</title>
+  <script src="https://kit.fontawesome.com/2227c873c2.js" crossorigin="anonymous"></script>
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="assets/css/estilos.css">
   <!-- Fuentes de Google -->
@@ -22,101 +20,123 @@
 
 <body>
   <header>
-    <div class="container-fluid">
-      <nav id="barra-Navegacion" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
-        <!-- Titutlo -->
-        <a class="navbar-brand gradient-text" href="#">BASTIAN</a>
-        <!-- Boton menu sandwich -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menu colapsavle -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#S-Skills"><button type="button" class="btn">Skills</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#S-Work-experience"><button type="button" class="btn">Work
-                  Experience</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#S-portfolio"><button type="button" class="btn">Portfolio</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#S-Contact"><button type="button" class="btn">Contact</button></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="perfil">
+      <div class="img-perfil no-mobile">
+      </div>
+      <a class="logo" href="#">Gut<span>San</span></a>
+      <div class="redes no-mobile">
+        <a href="https://web.whatsapp.com/send?phone=56956092671" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://cl.linkedin.com/in/bastian-guti%C3%A9rrez-s%C3%A1nchez-b7639445?trk=public_profile_samename-profile"
+          target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://github.com/Gutsan/" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <i class="fa-solid fa-bars only-mobile"></i>
+    <nav class="navbar no-mobile">
+      <div class="navlink">
+        <i class="fa-solid fa-user fa-1x"></i>
+        <a href="#S-About-me">About Me</a>
+      </div>
+      <div class="navlink">
+        <i class="fa-solid fa-laptop-code fa-1x"></i>
+        <a href="#S-Skills">Skills</a>
+      </div>
+      <div class="navlink">
+        <i class="fa-solid fa-person-digging fa-1x"></i>
+        <a class="navlink" href="#S-Work-experience">Work Experience</a>
+      </div>
+      <div class="navlink">
+        <i class="fa-solid fa-briefcase fa-1x"></i>
+        <a class="navlink" href="#S-portfolio">Portfolio></a>
+      </div>
+      <div class="navlink">
+        <i class="fa-regular fa-address-card fa-1x"></i>
+        <a class="navlink" href="#S-Contact">Contact</a>
+      </div>
+    </nav>
+    <div class="footheder no-mobile">
+      <p> ©copyrigth 2023 </p>
+      <p>designed by <span>Gutsan</span></p>
     </div>
   </header>
-  <!-- Sección 1 About-me -->
-  <!-- position-absolute end-0  -->
-  <section id="S-About-me" class="container-fluid section-t1 d-flex flex-column justify-content-evenly">
-    <div class="container contenedor-about-me">
-      <p class="fs-4 mb-0">Desarrollador Full Stack Trainee</p>
-      <h1 class="gradient-text ">BASTIAN GUTIERREZ SANCHEZ</h1>
+  <section id="S-home">
+    <p class="saludo">Hola, soy</p>
+    <p class="nombre">GutSan</p>
+    <p class="titulo">Full-Stack Trainee</p>
+  </section>
 
-      <p class="card-text"></p>
-      <!-- Navbar de redes sociales -->
-      <div class="navbar-collapse text-center">
-        <ul class="navbar" style="list-style-type: none;">
-          <li class="nav-item">
-            <a class="nav-link ft-WS" href="https://web.whatsapp.com/send?phone=56956092671" target="_blank"><button
-                type="button" class="btn"><i class="bi bi-whatsapp fs-1"></i></button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ft-ld"
-              href="https://cl.linkedin.com/in/bastian-guti%C3%A9rrez-s%C3%A1nchez-b7639445?trk=public_profile_samename-profile"
-              target="_blank"><button type="button" class="btn"><i class="bi bi-linkedin fs-1"></i></button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ft-tw" href="https://twitter.com/" target="_blank"><button type="button" class="btn"><i
-                  class="bi bi-twitter fs-1"></i></button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ft-gh" href="https://github.com/Gutsan/" target="_blank"><button type="button"
-                class="btn"><i class="bi bi-github fs-1"></i></button></a>
-          </li>
-        </ul>
+  <!-- Sección  About-me -->
+  <section id="S-About-me">
+    <div class="titulo-section">
+      <p> ABOUT ME </p>
+    </div>
+    <div class="resena">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio rerum ducimus. Temporibus excepturi
+        voluptatum doloribus omnis quod placeat iusto, accusantium reiciendis fuga unde id repellendus sit voluptate
+        dicta iste.</p>
+    </div>
+    <div class="datos-personales">
+      <div class="img-perfil">
+      </div>
+      <p class="titulo-datos">Desarrolador Full-Stack</p>
+      <div class="list-datos">
+        <div class="item-dato">
+          <h4><span>></span> Nombre:</h4>
+          <p>Bastian Gutierrez</p>
+        </div>
+        <div class="item-dato">
+          <h4><span>></span> Edad:</h4>
+          <p>35 Años</p>
+        </div>
+        <div class="item-dato">
+          <h4><span>></span> Grado Academico:</h4>
+          <p>Lic. Cs Ingeniería Civil</p>
+        </div>
+        <div class="item-dato">
+          <h4><span>></span> Telefono:</h4>
+          <p>+569 56092671</p>
+        </div>
+        <div class="item-dato">
+          <h4><span>></span> Email:</h4>
+          <p>bas.gutierrez@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-hobbies">
+      <p class="titulo-datos">Hobbies</p>
+      <div class="hobbies">
+        <div class="item-hobbie">
+          <i class="fa-regular fa-futbol fa-2x"></i>
+          <p>Asiduo espectador, pero muy mal jugador</p>
+        </div>
+        <div class="item-hobbie">
+          <i class="fa-solid fa-music fa-2x"></i>
+          <p>Sin musica no funcióno</p>
+        </div>
+        <div class="item-hobbie">
+          <i class="fa-solid fa-utensils fa-2x"></i>
+          <p>Que las personas disfruten lo que cocino</p>
+        </div>
       </div>
     </div>
   </section>
-  <section id="S-Skills" class="container-fluid section-t2">
-    <div class="mt-10 fs-2">
-      <p>Skills</p>
-    </div>
-    <div class="skills-container">
-      <div class="s-html">
-        <div class="S-titulo">HTML</div>
-        <div class="circular-progress progress-75">
-          <div class="text-progress">75%</div>
-        </div>
+
+  <!-- Sección  skills -->
+  <section id="S-Skills">
+    <div class="educaction-Contariner">
+      <div class="titulo-section">
+        <p> Educación</p>
       </div>
-      <div class="s-CSS">
-        <div class="S-titulo">CSS</div>
-        <div class="circular-progress progress-50">
-          <div class="text-progress">50%</div>
-        </div>
-      </div>
-      <div class="s-JavaScript">
-        <div class="S-titulo">JavaScript</div>
-        <div class="circular-progress progress-25">
-          <div class="text-progress">25%</div>
-        </div>
-      </div>
-      <div class="s-Python">
-        <div class="S-titulo">Python</div>
-        <div class="circular-progress progress-25">
-          <div class="text-progress">25%</div>
-        </div>
-      </div>
-    </div>
-    <div Class="Educación fs-2 mb-2">Educación</div>
-    <div class="educaction-Contariner mt-10">
-      <div class="card card-educaction" style="width: 28rem;">
+      <div class="card-educaction" style="width: 28rem;">
         <div class="card-body">
           <h5 class="card-title">Licenciado en ciencias de la Ingeniera Civil</h5>
           <h6 class="card-subtitle mb-2">UNAB 2013</h6>
@@ -131,19 +151,35 @@
           <h6 class="card-subtitle mb-2">Coursera 2023</h6>
           <p class="card-text">Durante el curso, aprendí a usar las estructuras de datos y tipos básicos de Python,
             incluyendo listas, diccionarios y tuplas. Además, aprendí a escribir funciones básicas, bucles y
-            condicionales en Python. También aprendí a utilizar bibliotecas de Python para realizar tareas
-            específicas, como la biblioteca NumPy para el procesamiento de matrices y la biblioteca Pandas para el
-            análisis de datos.</p>
+            condicionales en Python. .</p>
         </div>
       </div>
       <div class="card card-educaction" style="width: 28rem;">
         <div class="card-body">
           <h5 class="card-title">Desarrollo Full Stack JavaScript</h5>
           <h6 class="card-subtitle mb-2">ADL 2023</h6>
-          <p class="card-text">Actualmente estoy participando del bootcamp de desarrollo Full Stack en Academia desafio Latam.
+          <p class="card-text">Actualmente estoy participando del bootcamp de desarrollo Full Stack en Academia desafio
+            Latam.
             En este curso, he estado aprendiendo a construir aplicaciones web completas, desde la interfaz de usuario
             hasta la lógica del servidor y la base de datos.</p>
         </div>
+      </div>
+    </div>
+    <div class="skills-container">
+      <div class="s-html">
+        <div class="S-titulo">HTML</div>
+      </div>
+      <div class="s-CSS">
+        <div class="S-titulo">CSS</div>
+
+        </div>
+      </div>
+      <div class="s-JavaScript">
+        <div class="S-titulo">JavaScript</div>
+
+      </div>
+      <div class="s-Python">
+        <div class="S-titulo">Python</div>
       </div>
     </div>
   </section>
@@ -167,68 +203,6 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid Project-experience">
-      <div class="card card-educaction" style="width: 20rem;">
-        <img src="assets/img/Inacap-Renca.jpg" class="card-img-top img-project" alt="Inacap-Renca">
-        <div class="card-body">
-          <h5 class="card-title">INACAP RENCA</h5>
-          <h6 class="card-subtitle mb-2">Bravo de Saravia 2.980, Renca</h6>
-          <ul class="list-card">
-            <li class="list-card-item"><span class="text-bold">MANDANTE:</span> Universidad Tecnológica de Chile -
-              INACAP</li>
-            <li class="list-card-item"><span class="text-bold">ARQUITECTO:</span> Guillermo Rosende Asociados
-              Arquitectos</li>
-            <li class="list-card-item"><span class="text-bold">AÑO:</span> 2013</li>
-          </ul>
-          <a href="http://www.menayovalle.cl/portfolio/inacap-renca/" target="_blank" class="Button-more">more</a>
-        </div>
-      </div>
-      <div class="card card-educaction" style="width: 20rem;">
-        <img src="assets/img/Edificio-Patio-Alonso2.jpg" class="card-img-top img-project" alt="Inacap-Renca">
-        <div class="card-body">
-          <h5 class="card-title">EDIFICIO ALONSO DE CÓRDOVA</h5>
-          <h6 class="card-subtitle mb-2">Av. Alonso de Córdova 3.788, Vitacura</h6>
-          <ul class="list-card">
-            <li class="list-card-item"><span class="text-bold">MANDANTE:</span> Inmobiliaria y Constructora Alonso de
-              Córdova S.A.</li>
-            <li class="list-card-item"><span class="text-bold">ARQUITECTO:</span> San Martín & Pascal / Alonso &
-              Balaguer</li>
-            <li class="list-card-item"><span class="text-bold">AÑO:</span> 2016</li>
-          </ul>
-          <a href="http://www.menayovalle.cl/portfolio/edificio-alonso-de-cordova/" target="_blank"
-            class="Button-more">more</a>
-        </div>
-      </div>
-      <div class="card card-educaction" style="width: 20rem;">
-        <img src="assets/img/Edificio-vista-360.jpg" class="card-img-top img-project" alt="Inacap-Renca">
-        <div class="card-body">
-          <h5 class="card-title">EDIFICIO VISTA 360</h5>
-          <h6 class="card-subtitle mb-2">Av. Alonso de Córdova 4.580, Las Condes</h6>
-          <ul class="list-card">
-            <li class="list-card-item"><span class="text-bold">MANDANTE:</span> Inmobiliaria y Constructora Alonso de
-              Córdova S.A.</li>
-            <li class="list-card-item"><span class="text-bold">ARQUITECTO:</span> ABWB Arquitectos Asociados</li>
-            <li class="list-card-item"><span class="text-bold">AÑO:</span> 2019</li>
-          </ul>
-          <a href="https://www.menayovalle.cl/portfolio/edificio-vista-360/" target="_blank"
-            class="Button-more">more</a>
-        </div>
-      </div>
-      <div class="card card-educaction" style="width: 20rem;">
-        <img src="assets/img/Edificio-Irarrázaval.jpg" class="card-img-top img-project" alt="Inacap-Renca">
-        <div class="card-body">
-          <h5 class="card-title">EDIFICIO SITU IRARRAZAVAL</h5>
-          <h6 class="card-subtitle mb-2">Av. Irarrazaval 2171, Ñuñoa</h6>
-          <ul class="list-card">
-            <li class="list-card-item"><span class="text-bold">MANDANTE:</span> Inmobiliaria SITU S.A.</li>
-            <li class="list-card-item"><span class="text-bold">ARQUITECTO:</span> SITU S.A.</li>
-            <li class="list-card-item"><span class="text-bold">AÑO:</span> 2023</li>
-          </ul>
-          <a href="https://situ.cl/proyectos/irarrazaval/" target="_blank" class="Button-more">more</a>
-        </div>
-      </div>
-    </div>
-
   </section>
   <section id="S-portfolio" class="container-fluid  section-t2">
     <div class="mt-10 fs-2">
@@ -333,10 +307,6 @@
       <p>Bastian Gutierrez Sanchez 2023 Todos los derechos reservados</p>
     </div>
   </footer>
-  <!-- Scripts al final de Body -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
