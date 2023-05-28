@@ -13,6 +13,9 @@
   --bg-color: #181d27;
   --bg-color2: #191f29;
   --bg-color3: #1f2738;
+  --bg-color4: #6a7285;
+  --bg-color6:#181d2786;
+  --bg-color5: #f74464;
   --tx-color: #f74464;
   --tx-color2: #6a7285;
   --tx-color3: #f3f3f3;
@@ -101,7 +104,7 @@ header .logo span {
 }
 
 #S-About-me {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: var(--bg-color3);
   color: var(--tx-color3);
@@ -112,27 +115,30 @@ header .logo span {
   'datos'
   'hobbies';
   justify-items: center;
+  row-gap: 2rem;
+}
+.card-t-section{
+  width: 80vw;
 }
 
 .titulo-section {
   grid-area: titulo;
   margin-top: 5vh;
-  padding: 2rem 1rem 0 0;
   width: 4rem;
   border-bottom: solid 3px var(--tx-color);
 }
 .titulo-section p {
-  width: 100vw;
+  width: max-content;
   font-size: 2rem;
 }
 .resena {
   grid-area: resena;
-  width: 100vw;
+  width: 90vw;
 }
 .resena p{
   text-align: justify;
   padding-inline: 1rem;
-  width: 100;
+  width: 100%;
 }
 .img-perfil {
   width: 5rem;
@@ -190,130 +196,158 @@ header .logo span {
   background-color: var(--bg-color);
   color: var(--tx-color3);
   display: grid;
-  grid-template-rows: 1fr 1fr;
-grid-template-areas: 'education skills';
+  grid-template-areas: 'education' 
+  'skills';
+  justify-items: center
 }
-.educaction-Contariner {
+.educaction-Container {
   grid-area: education;
-  height: 100vh;
+  width: 90vw;
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   justify-content: space-around;
 }
 .card-educaction {
   margin-left: 1rem;
+  width:100%;
   background-color: transparent;
   text-align: justify;
-  /* border: solid 1px var(--tx-color); */
   }
-.card-educaction .card-title {
-  color: #f74464;
+  .card-title {
+  font-size: 1rem;
+  color: var(--tx-color3);
 }
-.card-educaction .card-subtitle {
-  color: #f797a8;
+
+.card-subtitle {
+  color: var(--tx-color);
 }
 .skills-container {
   grid-area: skills;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  width: 90vw;
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
-
-
-
-
-.circular-progress {
-  position: relative;
-  display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 9rem;
-  margin-inline: 1.5rem;
-  border: 1.2rem solid #374258;
-  box-sizing: border-box;
-  transform: rotate(45deg);
-  margin-bottom: 20px;
-}
-
-.text-progress {
-  color: #f74464;
-  transform: rotate(-45deg);
-  font-size: 3rem;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-}
-
 .S-titulo {
-  text-align: center;
-  margin-bottom: 0rem;
-  font-size: 2rem;
-  color: #f74464;
+  font-size: 1rem;
+  color: var(--tx-color3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-item{
+  width: 70vw;
+  margin-left: 1rem;
+  
 }
 
-.progress-25 {
-  border-left-color: #f74464;
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: var(--bg-color4);
+}
+.bar-25 {
+  height: 10px;
+  width: 25%;
+  background-color: var(--bg-color5);
+}
+.bar-50 {
+  height: 10px;
+  width: 100px;
+  background-color: var(--bg-color5);
+}
+.bar-75 {
+  height: 10px;
+  width: 75%;
+  background-color: var(--bg-color5);
+}
+.bar-100 {
+  height: 10px;
+  width: 200px;
+  background-color: var(--bg-color5);
 }
 
-.progress-50 {
-  border-left-color: #f74464;
-  border-top-color: #f74464;
+#S-Work-experience{
+width: 100vw;
+min-height:100vh;
+color: var(--tx-color3);
+background-color: var(--bg-color3);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+gap: 1rem;
+}
+.container-gallery{
+  width: 80vw;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
-.progress-75 {
-  border-left-color: #f74464;
-  border-top-color: #f74464;
-  border-right-color: #f74464;
+.card-gallery{
+  height: 30vw;
+  width: 30vw;
+  filter: grayscale(1);
+  transition: all 0.5s ease-in;
 }
 
-.progress-100 {
-  border-left-color: #f74464;
-  border-top-color: #f74464;
-  border-bottom: #f74464;
+.card-gallery img{
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+  transition: all 0.5s ease-in;
+}
+.datos-project{
+  position: absolute;
+  top:70%;
+  width: 100%;
+  background-color: var(--bg-color6);
+  transition: opacity 0.5s ease-in;
+  /* visibility: hidden; */
+  opacity: 0%;
+}
+.project-title{
+  font-size: 0.8rem;
+}
+.project-ano{
+  font-size: 0.5rem;
+  color: var(--tx-color);
+}
+.card-gallery:hover{
+transform: scale(1.3);
+filter: grayscale(0);
+z-index: 1000;
+}
+.card-gallery:hover .datos-project{
+  opacity: 100%;
 }
 
-
-
+/* ---------------------------------- */
+/* VER LA OPCIÓN DE AGREGAR BOTON MAS */
 .Button-more {
   all: initial;
   color: #f74464;
   font-size: 1.2rem;
 }
-
 .Button-more:hover {
   color: #f797a8;
   cursor: pointer;
 }
+/* ---------------------------------- */
 
-.list-card-item {
-  list-style-type: none;
+
+#S-portfolio{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--tx-color3);
 }
 
-.text-bold {
-  font-weight: bold;
-}
-
-.list-card {
-  padding: 0;
-}
-
-.Project-experience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.img-project {
-  height: 20rem;
-
-  object-fit: cover;
-}
 
 .portf-card {
   position: relative;
@@ -586,14 +620,18 @@ grid-template-areas: 'education skills';
   height: 100vh;
   width: 80vw;
 }
+.card-t-section{
+  width: 75vw;
+}
 .titulo-section{
   height: 8vh;
 }
 .titulo-section p {
   width: 80vw;
+  
 }
 .resena{
-  width: 80vw;
+  width: 75vw;
 }
 .datos-personales{
   width: 50vw;
@@ -619,6 +657,44 @@ grid-area:datos;
 #S-Skills{
   margin-left: 20vw;
   width: 80vw;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--tx-color3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'education skills';
+  align-items: center;
+}
+.educaction-Container {
+  width: 35vw;
+  height: 60vh;
+}
+.skills-container{
+  width: 35vw;
+  height: 60vh;
+}
+.skill-item{
+  width: 35vw;
+}
+#S-Work-experience{
+  margin-left: 20vw;
+  width: 80vw;
+  min-height: 100vh;
+}
+.container-gallery{
+height: 50vh;
+width: 70vw;
 }
 
+.card-gallery{
+  height: 30vh;
+  width: 30vh;
+  filter: grayscale(1);
+  transition: all 0.5s ease-in;
+}
+
+.card-gallery img{
+  height: 30vh;
+  width: 30vh;
+}
 }
