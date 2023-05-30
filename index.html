@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GUTSAN ●•●</title>
+  <title>GUTSAN ●●●</title>
   <script src="https://kit.fontawesome.com/2227c873c2.js" crossorigin="anonymous"></script>
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="assets/css/estilos.css">
@@ -20,13 +20,30 @@
 
 <body>
   <header>
-    <div class="perfil">
-      <div class="img-perfil no-mobile">
+    <a class="logo" href="#">
+      <span>G</span>
+      <span>u</span>
+      <span>T</span>
+      <span>S</span>
+      <span>A</span>
+      <span>N</span>
+      <span>●</span>
+      <div class="linea"></div>
       </div>
-      <a class="logo" href="#">Gut<span>San</span>◯●•</a>
+    </a>
+    
+  </header>
+  <label for="menulat" class="menu-hamburger only-mobile">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+  <input type="checkbox" id="menulat" class="menu_input">
+  <section id="menu-lateral">  
+
+    <div class="perfil">
+      <div class="img-perfil">
+      </div>
     </div>
-    <i class="fa-solid fa-bars only-mobile"></i>
-    <nav class="navbar no-mobile">
+    <nav class="navbar">
       <div class="navlink">
         <i class="fa-solid fa-user fa-1x"></i>
         <a href="#S-About-me">About Me</a>
@@ -41,350 +58,359 @@
       </div>
       <div class="navlink">
         <i class="fa-solid fa-briefcase fa-1x"></i>
-        <a class="navlink" href="#S-portfolio">Portfolio></a>
+        <a class="navlink" href="#S-portfolio">Portfolio</a>
       </div>
       <div class="navlink">
         <i class="fa-regular fa-address-card fa-1x"></i>
         <a class="navlink" href="#S-Contact">Contact</a>
       </div>
     </nav>
-    <div class="footheder no-mobile">
-      <p> ©copyrigth 2023 </p>
-      <p>designed by <span>Gutsan</span></p>
-    </div>
-  </header>
-  <section id="S-home">
-    <p class="saludo">Hola, soy</p>
-    <p class="nombre">GutSan</p>
-    <p class="titulo">Full-Stack Trainee</p>
   </section>
 
-  <!-- Sección  About-me -->
-  <section id="S-About-me">
-    <div class="card-t-section">
-      <div class="titulo-section">
-        <p> ABOUT ME </p>
-      </div>
-    </div>
-    <div class="resena">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio rerum ducimus. Temporibus excepturi
-        voluptatum doloribus omnis quod placeat iusto, accusantium reiciendis fuga unde id repellendus sit voluptate
-        dicta iste.</p>
-    </div>
-    <div class="datos-personales">
-      <div class="img-perfil">
-      </div>
-      <p class="titulo-datos">Desarrolador Full-Stack</p>
-      <div class="list-datos">
-        <div class="item-dato">
-          <h4><span>></span> Nombre:</h4>
-          <p>Bastian Gutierrez</p>
-        </div>
-        <div class="item-dato">
-          <h4><span>></span> Edad:</h4>
-          <p>35 Años</p>
-        </div>
-        <div class="item-dato">
-          <h4><span>></span> Grado Academico:</h4>
-          <p>Lic. Cs Ingeniería Civil</p>
-        </div>
-        <div class="item-dato">
-          <h4><span>></span> Telefono:</h4>
-          <p>+569 56092671</p>
-        </div>
-        <div class="item-dato">
-          <h4><span>></span> Email:</h4>
-          <p>bas.gutierrez@gmail.com</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-hobbies">
-      <p class="titulo-datos">Hobbies</p>
-      <div class="hobbies">
-        <div class="item-hobbie">
-          <i class="fa-regular fa-futbol fa-2x"></i>
-          <p>Asiduo espectador, pero muy mal jugador</p>
-        </div>
-        <div class="item-hobbie">
-          <i class="fa-solid fa-music fa-2x"></i>
-          <p>Sin musica no funcióno</p>
-        </div>
-        <div class="item-hobbie">
-          <i class="fa-solid fa-utensils fa-2x"></i>
-          <p>Que las personas disfruten lo que cocino</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- Sección  About-me -->
+    <section id="S-home">
+      <p class="saludo">Hola, soy</p>
+      <p class="nombre">Gut<span>San</span></p>
+      <p class="titulo">Full-Stack Trainee</p>
+    </section>
 
-  <!-- Sección  skills -->
-  <section id="S-Skills">
-    <div class="educaction-Container">
-      <div class="titulo-section">
-        <p> Educación</p>
-      </div>
-      <div class="card-educaction">
-        <h6 class="card-subtitle">UNAB 2013</h6>
-        <h5 class="card-title">Licenciado en ciencias de la Ingeniera Civil</h5>
-      </div>
-      <div class="card-educaction">
-        <h6 class="card-subtitle">UC-Coursera 2023</h6>
-        <h5 class="card-title">Introducción al desarrollo Python</h5>
-      </div>
-      <div class="card-educaction">
-        <h6 class="card-subtitle">ADL 2023</h6>
-        <h5 class="card-title">Desarrollo Full Stack JavaScript</h5>
-      </div>
-    </div>
-    <div class="skills-container">
-      <div class="titulo-section">
-        <p> Skills</p>
-      </div>
-      <div class="skill-item">
-        <div class="S-titulo">
-          <p>HTML</p>
-          <p>75%</p>
-        </div>
-        <div class="progress-bar">
-          <div class="bar-75"></div>
+    <!-- Sección  About-me -->
+    <section id="S-About-me">
+      <div class="card-t-section">
+        <div class="titulo-section">
+          <p> ABOUT ME </p>
         </div>
       </div>
-      <div class="skill-item">
-        <div class="S-titulo">
-          <p>CSS</p>
-          <p>75%</p>
-        </div>
-        <div class="progress-bar">
-          <div class="bar-75"></div>
-        </div>
-      </div>
-      <div class="skill-item">
-        <div class="S-titulo">
-          <p>JavaScript</p>
-          <p>25%</p>
-        </div>
-        <div class="progress-bar">
-          <div class="bar-25"></div>
-        </div>
-      </div>
-      <div class="skill-item">
-        <div class="S-titulo">
-          <p>Python</p>
-          <p>25%</p>
-        </div>
-        <div class="progress-bar">
-          <div class="bar-25"></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section id="S-Work-experience">
-    <div class="card-t-section">
-      <div class="titulo-section">
-        <p>Work Experience</p>
-      </div>
-    </div>
-    <div class="Container-work-experience">
       <div class="resena">
-        <h6 class="card-subtitle">Empresa Constructora Mena y Ovalle 2013-2023</h6>
-        <h5 class="card-title">Jefe de Oficina técnica</h5>
-        <p>Gestión de la construcción aplicando diversos indicadores tanto para analisis de costos y
-          avances. Se destaca por el desarrollo nuevos métodos para realizar estos análisis, aprovechando
-          herramientas como VBA para maximizar la eficiencia y precisión de mis procesos de trabajo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio rerum ducimus. Temporibus
+          excepturi
+          voluptatum doloribus omnis quod placeat iusto, accusantium reiciendis fuga unde id repellendus sit voluptate
+          dicta iste.</p>
       </div>
-    </div>
-    <div class="container-gallery">
-      <div class="card-gallery">
-        <img src="assets/img/Inacap-Renca.jpg" alt="Inacap-Renca">
-        <div class="datos-project">
-          <p class="project-title">INACAP RENCA</P>
-          <p class="project-ano">AÑO:2013</p>
+      <div class="datos-personales">
+        <div class="img-perfil">
+        </div>
+        <p class="titulo-datos">Desarrolador Full-Stack</p>
+        <div class="list-datos">
+          <div class="item-dato">
+            <h4><span>></span> Nombre:</h4>
+            <p>Bastian Gutierrez</p>
+          </div>
+          <div class="item-dato">
+            <h4><span>></span> Edad:</h4>
+            <p>35 Años</p>
+          </div>
+          <div class="item-dato">
+            <h4><span>></span> Grado Academico:</h4>
+            <p>Lic. Cs Ingeniería Civil</p>
+          </div>
+          <div class="item-dato">
+            <h4><span>></span> Telefono:</h4>
+            <p>+569 56092671</p>
+          </div>
+          <div class="item-dato">
+            <h4><span>></span> Email:</h4>
+            <p>bas.gutierrez@gmail.com</p>
+          </div>
         </div>
       </div>
-      <div class="card-gallery">
-        <img src="assets/img/Edificio-Patio-Alonso2.jpg" alt="Patio-Alonso">
-        <div class="datos-project">
-          <p class="project-title">Edificio Patio Alonso</P>
-          <p class="project-ano">AÑO:2016</p>
+      <div class="card-hobbies">
+        <p class="titulo-datos">Hobbies</p>
+        <div class="hobbies">
+          <div class="item-hobbie">
+            <i class="fa-regular fa-futbol fa-2x"></i>
+            <p>Asiduo espectador, pero muy mal jugador</p>
+          </div>
+          <div class="item-hobbie">
+            <i class="fa-solid fa-music fa-2x"></i>
+            <p>Sin musica no funcióno</p>
+          </div>
+          <div class="item-hobbie">
+            <i class="fa-solid fa-utensils fa-2x"></i>
+            <p>Que las personas disfruten lo que cocino</p>
+          </div>
         </div>
       </div>
-      <div class="card-gallery">
-        <img src="assets/img/Edificio-vista-360.jpg" alt="Vista-360">
-        <div class="datos-project">
-          <p class="project-title">Edificio Vista 360</P>
-          <p class="project-ano">AÑO:2019</p>
-        </div>
-      </div>
-      <div class="card-gallery">
-        <img src="assets/img/Edificio-Irarrázaval.jpg" alt="Irarrázaval">
-        <div class="datos-project">
-          <p class="project-title">Edificio Irarrázaval</P>
-          <p class="project-ano">AÑO:2023</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
-  </section>
-  <section id="S-portfolio">
+    <!-- Sección  skills -->
+    <section id="S-Skills">
+      <div class="educaction-Container">
+        <div class="titulo-section">
+          <p> Educación</p>
+        </div>
+        <div class="card-educaction">
+          <h6 class="card-subtitle">UNAB 2013</h6>
+          <h5 class="card-title">Licenciado en ciencias de la Ingeniera Civil</h5>
+        </div>
+        <div class="card-educaction">
+          <h6 class="card-subtitle">UC-Coursera 2023</h6>
+          <h5 class="card-title">Introducción al desarrollo Python</h5>
+        </div>
+        <div class="card-educaction">
+          <h6 class="card-subtitle">ADL 2023</h6>
+          <h5 class="card-title">Desarrollo Full Stack JavaScript</h5>
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="titulo-section">
+          <p> Skills</p>
+        </div>
+        <div class="skill-item">
+          <div class="S-titulo">
+            <p>HTML</p>
+            <p>75%</p>
+          </div>
+          <div class="progress-bar">
+            <div class="bar-75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="S-titulo">
+            <p>CSS</p>
+            <p>75%</p>
+          </div>
+          <div class="progress-bar">
+            <div class="bar-75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="S-titulo">
+            <p>JavaScript</p>
+            <p>25%</p>
+          </div>
+          <div class="progress-bar">
+            <div class="bar-25"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="S-titulo">
+            <p>Python</p>
+            <p>25%</p>
+          </div>
+          <div class="progress-bar">
+            <div class="bar-25"></div>
+          </div>
+        </div>
 
-    <div class="card-t-section">
-      <div class="titulo-section">
-        <p>Portafolio</p>
       </div>
-    </div>
+    </section>
 
-    <div class="container-portf">
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Rayz Shirt.png" alt="Landing-Page">
-        </div>
-        <div class="portf-det">
-          <h3>Landing Page-CSS</h3>
-          <p>Pagina de ventas de poleras personalizadas-utilizando CSS</p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/Desafio-2--Landing-page" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="https://github.com/Gutsan/Desafio-2--Landing-page" target="_blank"><i
-                class="fa-brands fa-git"></i></a>
-          </div>
+    <!-- Sección  Work -->
+    <section id="S-Work-experience">
+      <div class="card-t-section">
+        <div class="titulo-section">
+          <p>Work Experience</p>
         </div>
       </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Esteban Paredes EP7 idolo.png" alt="Esteban Pardes">
-        </div>
-        <div class="portf-det">
-          <h3>Landing Page-Flex</h3>
-          <p>Pagina del Idolo Esteban, utilizando Alinacción con Flex</p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/Desfio-2-EP7-Pague" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="https://github.com/Gutsan/Desfio-2-EP7-Pague" target="_blank"><i
-                class="fa-brands fa-git"></i></a></a>
-          </div>
+      <div class="Container-work-experience">
+        <div class="resena">
+          <h6 class="card-subtitle">Empresa Constructora Mena y Ovalle 2013-2023</h6>
+          <h5 class="card-title">Jefe de Oficina técnica</h5>
+          <p>Gestión de la construcción aplicando diversos indicadores tanto para analisis de costos y
+            avances. Se destaca por el desarrollo nuevos métodos para realizar estos análisis, aprovechando
+            herramientas como VBA para maximizar la eficiencia y precisión de mis procesos de trabajo.</p>
         </div>
       </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/ContruPPon.png" alt="Construppon">
-        </div>
-        <div class="portf-det">
-          <h3>Construppon-Bootstraps</h3>
-          <p>Pagina de Ventas de articulos de construcción</p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/Desafio4-Construpon" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="https://github.com/Gutsan/Desafio4-Construpon" target="_blank"><i
-                class="fa-brands fa-git"></i></a></a>
+      <div class="container-gallery">
+        <div class="card-gallery">
+          <img src="assets/img/Inacap-Renca.jpg" alt="Inacap-Renca">
+          <div class="datos-project">
+            <p class="project-title">INACAP RENCA</P>
+            <p class="project-ano">AÑO:2013</p>
           </div>
         </div>
-      </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Contact Me.png" alt="Contact Me">
-        </div>
-        <div class="portf-det">
-          <h3>Mensajeria-Flexbox</h3>
-          <p>Maqueta pagina de mensajería-Flexbox</p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/Sistema-Mensajeria/" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="https://github.com/Gutsan/Sistema-Mensajeria" target="_blank"><i
-                class="fa-brands fa-git"></i></a></a>
+        <div class="card-gallery">
+          <img src="assets/img/Edificio-Patio-Alonso2.jpg" alt="Patio-Alonso">
+          <div class="datos-project">
+            <p class="project-title">Edificio Patio Alonso</P>
+            <p class="project-ano">AÑO:2016</p>
           </div>
         </div>
-      </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Louup Elige compra ahorra.png" alt="Contact Me">
-        </div>
-        <div class="portf-det">
-          <h3>e-commerce</h3>
-          <p>e-commerce- Grid y mediaQuery </p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/ecommerce/" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="https://github.com/Gutsan/ecommerce" target="_blank"><i class="fa-brands fa-git"></i></a></a>
+        <div class="card-gallery">
+          <img src="assets/img/Edificio-vista-360.jpg" alt="Vista-360">
+          <div class="datos-project">
+            <p class="project-title">Edificio Vista 360</P>
+            <p class="project-ano">AÑO:2019</p>
           </div>
         </div>
-      </div>
-
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Music.png" alt="Contact Me">
-        </div>
-        <div class="portf-det">
-          <h3>Spotify</h3>
-          <p>Fake Spotify -En construcción </p>
-          <div class="link-repo">
-            <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="" target="_blank"><i class="fa-brands fa-git"></i></a></a>
-          </div>
-        </div>
-      </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Colo-Colo.png" alt="Contact Me">
-        </div>
-        <div class="portf-det">
-          <h3>Colo colo</h3>
-          <p>page fans de colo colol -En construcción </p>
-          <div class="link-repo">
-            <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="" target="_blank"><i class="fa-brands fa-git"></i></a></a>
-          </div>
-        </div>
-      </div>
-      <div class="portf-card">
-        <div class="portf-img">
-          <img src="assets/img/Calculadora de alimentos.png" alt="Contact Me">
-        </div>
-        <div class="portf-det">
-          <h3>Calculadora-carne</h3>
-          <p>Calculadora cant de carne asado -En construcción </p>
-          <div class="link-repo">
-            <a href="https://gutsan.github.io/CalculadoraCarrete" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
-            <a href="https://github.com/Gutsan/CalculadoraCarrete" target="_blank"><i
-                class="fa-brands fa-git"></i></a></a>
+        <div class="card-gallery">
+          <img src="assets/img/Edificio-Irarrázaval.jpg" alt="Irarrázaval">
+          <div class="datos-project">
+            <p class="project-title">Edificio Irarrázaval</P>
+            <p class="project-ano">AÑO:2023</p>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
-  <section id="S-Contact">
-    <div class="footer-principal">
-      <div class="ft-contact">
-        <h3>CONTACTAME</h3>
-        <input class="ip-nom" type="text" placeholder="Nombre">
-        <input class="ip-correo" type="text" placeholder="Correo">
-        <input class="ip-msg" type="text" placeholder="Mensaje">
-        <button> Enviar</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Sección  Portafolio -->
+    <section id="S-portfolio">
+
+      <div class="card-t-section">
+        <div class="titulo-section">
+          <p>Portafolio</p>
+        </div>
+      </div>
+
+      <div class="container-portf">
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Rayz Shirt.png" alt="Landing-Page">
+          </div>
+          <div class="portf-det">
+            <h3>Landing Page-CSS</h3>
+            <p>Pagina de ventas de poleras personalizadas-utilizando CSS</p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/Desafio-2--Landing-page" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Gutsan/Desafio-2--Landing-page" target="_blank"><i
+                  class="fa-brands fa-git"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Esteban Paredes EP7 idolo.png" alt="Esteban Pardes">
+          </div>
+          <div class="portf-det">
+            <h3>Landing Page-Flex</h3>
+            <p>Pagina del Idolo Esteban, utilizando Alinacción con Flex</p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/Desfio-2-EP7-Pague" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="https://github.com/Gutsan/Desfio-2-EP7-Pague" target="_blank"><i
+                  class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/ContruPPon.png" alt="Construppon">
+          </div>
+          <div class="portf-det">
+            <h3>Construppon-Bootstraps</h3>
+            <p>Pagina de Ventas de articulos de construcción</p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/Desafio4-Construpon" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="https://github.com/Gutsan/Desafio4-Construpon" target="_blank"><i
+                  class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Contact Me.png" alt="Contact Me">
+          </div>
+          <div class="portf-det">
+            <h3>Mensajeria-Flexbox</h3>
+            <p>Maqueta pagina de mensajería-Flexbox</p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/Sistema-Mensajeria/" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="https://github.com/Gutsan/Sistema-Mensajeria" target="_blank"><i
+                  class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Louup Elige compra ahorra.png" alt="Contact Me">
+          </div>
+          <div class="portf-det">
+            <h3>e-commerce</h3>
+            <p>e-commerce- Grid y mediaQuery </p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/ecommerce/" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="https://github.com/Gutsan/ecommerce" target="_blank"><i class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Music.png" alt="Contact Me">
+          </div>
+          <div class="portf-det">
+            <h3>Spotify</h3>
+            <p>Fake Spotify -En construcción </p>
+            <div class="link-repo">
+              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="" target="_blank"><i class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Colo-Colo.png" alt="Contact Me">
+          </div>
+          <div class="portf-det">
+            <h3>Colo colo</h3>
+            <p>page fans de colo colol -En construcción </p>
+            <div class="link-repo">
+              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="" target="_blank"><i class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="portf-card">
+          <div class="portf-img">
+            <img src="assets/img/Calculadora de alimentos.png" alt="Contact Me">
+          </div>
+          <div class="portf-det">
+            <h3>Calculadora-carne</h3>
+            <p>Calculadora cant de carne asado -En construcción </p>
+            <div class="link-repo">
+              <a href="https://gutsan.github.io/CalculadoraCarrete" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a></a>
+              <a href="https://github.com/Gutsan/CalculadoraCarrete" target="_blank"><i
+                  class="fa-brands fa-git"></i></a></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección  Contactos -->
+    <section id="S-Contact">
+      <div class="footer-principal">
+        <div class="ft-contact">
+          <h3>CONTACTAME</h3>
+          <input class="ip-nom" type="text" placeholder="Nombre">
+          <input class="ip-correo" type="text" placeholder="Correo">
+          <input class="ip-msg" type="text" placeholder="Mensaje">
+          <button> Enviar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
   <footer>
-    <div class="redes no-mobile">
+    <div class="redes">
       <a href="https://web.whatsapp.com/send?phone=56956092671" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp bt-WS"></i>
       </a>
       <a href="https://cl.linkedin.com/in/bastian-guti%C3%A9rrez-s%C3%A1nchez-b7639445?trk=public_profile_samename-profile"
         target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-linkedin bt-ld"></i>
       </a>
       <a href="https://twitter.com/" target="_blank">
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-twitter bt-tw"></i>
       </a>
       <a href="https://github.com/Gutsan/" target="_blank">
-        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-github bt-gh"></i>
       </a>
     </div>
     <h4>"La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote" Einstein, A.</h4>
-    <p>Bastian Gutierrez Sanchez 2023 Todos los derechos reservados</p>
+    <p><span>@GUTSAN</span> 2023 Todos los derechos reservados</p>
   </footer>
+
 </body>
 
 </html>
